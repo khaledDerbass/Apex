@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('ApexComme.urls'))
+    path('',include('ApexComme.urls')),
+    path('ApexAuth/', include('ApexAuth.urls')),
 ]
